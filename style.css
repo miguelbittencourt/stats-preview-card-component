@@ -12,22 +12,40 @@ body{
 
 img{
     max-width: 100%;
+    height: 200px;
+}
+
+.container .div-picture{
+    height: 175px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.container .picture{
+    background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+}
+
+.container .overlay{
+    background-color: hsla(277, 90%, 30%, 0.5);
 }
 
 ul{
     list-style-type: none;
+    
 }
 
 .container{
     background-color: var(--card-bg);
-    margin: 50px 20px;
-    padding: 20px;
+    padding: 0 0 1.5rem;
+    border-radius: 0.5rem;
+    width: 250px;
+    margin: 1.5rem auto 1rem;
+    text-align: center;
 }
 
-#container2 img{
+/* #container2 img{
     width: 100%;
-    border-radius: 0.5rem;
-}
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+} */
 
 :root{
     /* ### Primary */
@@ -44,7 +62,55 @@ ul{
 --stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 
-#container2{
+
+/* .container .card picture img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+} */
+
+.container .card h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: var(--main-stats);
+    font-size: 1.3rem;
+}
+
+.container .card h1 span{
+    color: var(--accent);
+}
+
+.container .card p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--main-paragraph);
+    margin: 1rem 0;
+    
+}
+
+.container .card ul li{
+    margin: 1.5rem 0 0 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--main-stats);
+    justify-content: center;
+}
+
+.container .card ul li span{
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: var(--stats-heading);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.container #card2{
+    padding: 1rem 1rem 0 1rem;
+}
+
+/* #container2{
     margin: 7rem auto 4rem;
     width: 80%;
     border-radius: 4rem;
@@ -52,9 +118,9 @@ ul{
     display: flex;
     border-radius: 0.5rem;
     justify-content: space-between;
-}
+} */
 
-#div1{
+/* #div1{
     display: flex;
     flex-direction: column;
     width: 36%;
@@ -112,5 +178,5 @@ ul{
     background-color: var(--img-violet);
     position: absolute;
     opacity: 0.5;
-}
+} */
 
