@@ -3,16 +3,11 @@
     padding: 0;
 }
 
-
 body{
     font-size: 15px;
     box-sizing: border-box;
     background-color: var(--main-bg);
-}
-
-img{
-    max-width: 100%;
-    height: 200px;
+    font-family: "Inter";
 }
 
 .container .div-picture{
@@ -30,22 +25,15 @@ img{
 
 ul{
     list-style-type: none;
-    
 }
 
 .container{
     background-color: var(--card-bg);
     padding: 0 0 1.5rem;
     border-radius: 0.5rem;
-    width: 250px;
-    margin: 1.5rem auto 1rem;
     text-align: center;
 }
 
-/* #container2 img{
-    width: 100%;
-    border-radius: 0.5rem 0.5rem 0.5rem 0;
-} */
 
 :root{
     /* ### Primary */
@@ -58,21 +46,17 @@ ul{
 /* ### Neutral */
 
 --main-stats: hsl(0, 0%, 100%);
---main-paragraph: hsla(0, 0%, 100%, 0.75);
+--main-paragraph: hsla(0, 0%, 100%, 0.6);
 --stats-heading: hsla(0, 0%, 100%, 0.6);
 }
 
 
-/* .container .card picture img{
-    width: 100%;
-    border-radius: 0.5rem 0.5rem 0 0;
-} */
-
 .container .card h1{
     font-family: "Inter", sans-serif;
     font-weight: 700;
+    line-height: 1.8rem;
     color: var(--main-stats);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .container .card h1 span{
@@ -81,18 +65,24 @@ ul{
 
 .container .card p{
     font-family: "Lexend Deca", sans-serif;
-    font-size: 0.8rem;
+    display: inline-block;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
     font-weight: 400;
     color: var(--main-paragraph);
-    margin: 1rem 0;
-    
+    margin: 1rem 0 2rem;
+    width: 93%;
+}
+
+.container .card ul li:first-child{
+    margin: 0;
 }
 
 .container .card ul li{
     margin: 1.5rem 0 0 0;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--main-stats);
     justify-content: center;
 }
@@ -107,76 +97,70 @@ ul{
 }
 
 .container #card2{
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
-/* #container2{
-    margin: 7rem auto 4rem;
-    width: 80%;
-    border-radius: 4rem;
-    background-color: var(--card-bg);
-    display: flex;
-    border-radius: 0.5rem;
-    justify-content: space-between;
-} */
-
-/* #div1{
-    display: flex;
-    flex-direction: column;
-    width: 36%;
-    margin: 3rem 4rem 0;
+@media(min-width: 375px){
+    .container{
+        width: 250px;
+        margin: 1.5rem auto 1rem;
+    }
 }
 
-#div1 h1{
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    color: var(--main-stats);
-    font-size: 2rem;
-    margin: 1rem 0;
+@media(max-width: 375px){
+    .container{
+        width: 240px;
+        margin: 1.5rem auto 1rem;
+    }
+    
+    .container .div-picture{
+        height: 160px;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
 }
 
-#span-insights{
-    color: var(--accent);
-}
+@media(min-width: 800px){
 
-#div1 p{
-    margin: 1rem 0 4.5rem;
-}
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 800px;
+        padding-bottom: 0;
+        margin: 5rem auto;
+    }
 
-#div1 div{
-    font-family: "Inter";
-    color: var(--main-stats);
-    justify-content: center;
-}
+    .container .card{
+        width: 50%;
+    }
 
-#div1 div h3{
-    display: inline-block;
-    margin-right: 3.5rem;
-}
+    .container .card ul li:first-child{
+        margin: 0 2rem 0 0;
+    }
 
-#div1 div p{
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-}
+    .container .card ul li{
+        display: inline-block;
+        text-align: left;
+        margin: 0 2rem 0 0;
+    }
 
-#div1 p{
-    font-family: "Lexend Deca";
-    font-weight: 400;
-    color: var(--main-paragraph);
-}
+    .container .div-picture{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 
-#div2{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: relative;
-}
+    .container #card2{
+        padding: 0;
+        text-align: left;
+    }
 
-#div2 div{
-    width: 100%;
-    height: 100%;
-    background-color: var(--img-violet);
-    position: absolute;
-    opacity: 0.5;
-} */
+    .container #card2 #card-inside{
+        width: 72%;
+        margin: 3.5rem auto 3rem;
+    }
+
+    .container .picture{
+        background: url("./images/image-header-desktop.jpg") no-repeat center/cover;
+    }
+}
 

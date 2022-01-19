@@ -14,7 +14,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; margin: 1rem auto; }
+    .attribution { font-size: 11px; text-align: center; margin: 1rem auto; color: white;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -22,29 +22,30 @@
 
   <section class="container">
 
-    <div class="card picture div-picture">
-
-      <!-- <picture>
-        <source media="(min-width: 768px)" srcset="./images/image-header-mobile.jpg">
-        <img src="./images/image-header-desktop.jpg" alt="office workers">
-      </picture> -->
-      <div class="overlay div-picture"></div>
-
+    <div class="card main-picture" id="card1">
+      <div class="card picture div-picture" >
+    
+        <div class="overlay div-picture"></div>
+  
+      </div>
     </div>
+    
 
     <div class="card" id="card2">
 
-      <h1>Get <span>insights</span> that help your business grow</h1>
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experiece, and overall efficiency.</p>
-      
-      <div class="stats">
-        <ul>
-          <li>10k+<span>COMPANIES</span></li>
-          <li>314<span>TEMPLATES</span></li>
-          <li>12M+<span>QUERIES</span></li>
-        </ul>
-      </div>
-
+      <div id="card-inside">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <div id="main-paragraph">
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experiece, and overall efficiency.</p>
+          </div>
+          <div class="stats">
+            <ul>
+              <li>10k+<span>COMPANIES</span></li>
+              <li>314<span>TEMPLATES</span></li>
+              <li>12M+<span>QUERIES</span></li>
+            </ul>
+          </div>
+        </div>
     </div>
 
   </section>
