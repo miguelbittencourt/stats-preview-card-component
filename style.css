@@ -119,14 +119,14 @@ ul{
     }
 }
 
-@media(min-width: 800px){
+@media(min-width: 768px){
 
     .container{
         display: flex;
         flex-direction: row-reverse;
-        width: 840px;
+        width: 860px;
         padding-bottom: 0;
-        margin: 5rem auto;
+        margin: 10rem auto;
     }
 
     .container .card{
@@ -155,7 +155,7 @@ ul{
     }
 
     .container #card2 #card-inside{
-        width: 72%;
+        width: 75%;
         margin: 3.5rem auto 3rem;
     }
 
